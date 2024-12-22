@@ -1,0 +1,251 @@
+/* services */
+.services {
+    position: relative;
+    /* width: 100%; */
+    /* background-image: url('../../../src/assets/images/servbackground.webp'); */
+    /* background-size: cover; */
+}
+
+.services .heeding {
+    /* color: #E4630D; */
+    color: #000;
+}
+
+.services .textbox p {
+    color: #5F3F80;
+}
+
+.services .servImg {
+    margin-top: -120px;
+    max-height: 420px;
+    /* max-height: 250px; */
+    width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width:567px) {
+    .services .servImg {
+        margin-top: auto;
+    }
+}
+
+.circleContainer {
+    position: relative !important;
+    /* top: 0 !important; */
+}
+
+.circleContainer .homeIcons {
+    color: #000 !important;
+    border-right: 2px solid #000 !important;
+}
+
+@media (max-width:768px) {
+    .circleContainer .homeIcons {
+        margin-right: 0 !important;
+    }
+}
+
+.circleContainer .homeIcons::before,
+.circleContainer .homeIcons::after {
+    background-color: #000 !important;
+}
+
+/* contact Us */
+
+.contactUs .conactHeed {
+    color: #E4630D;
+    max-width: 380px;
+}
+
+.contactUs .formBox {
+    width: 100%;
+    height: 45px;
+}
+
+.contactUs .contactInput {
+    border: 1px solid #BEBDBD;
+    border-left: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 0px;
+}
+
+.contactUs .contactInput:focus {
+    outline: none;
+}
+
+.contactUs .btnSubmit {
+    background-color: #E4630D;
+    color: #fff;
+    border: 1px solid #BEBDBD;
+    height: 50px;
+    width: 100px;
+    /* border-radius: 6px; */
+    border-top-left-radius: 6px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 6px;
+}
+
+@media (max-width:768px) {
+
+    .contactUs::before,
+    .contactUs::after {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .contactUs .conactHeed {
+        max-width: 100%;
+    }
+
+
+}
+
+@media (max-width:567px) {
+    .contactUs .contactInput {
+        width: 70%;
+    }
+
+    .contactUs .btnSubmit {
+        width: 30%;
+    }
+
+    .contactUs {
+        height: 330px;
+    }
+
+    .contactUs::before,
+    .contactUs::after {
+        height: 100px;
+    }
+
+
+
+}
+
+/* design  */
+.design .designHeeding,
+.design .icon {
+    color: #E4630D;
+}
+
+.design .icon {
+    transform: rotate(220deg);
+    font-size: 20px;
+}
+
+.lapDesignImg {
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.service {
+    background-image: url('../../assets/images/bg2_service.webp'), url('../../assets/images/bg1_service.webp');
+    /* Replace with your image URLs */
+    background-size: cover, cover;
+    /* Set the size for each image */
+    background-repeat: no-repeat, no-repeat;
+    /* Prevent the images from repeating */
+}
+
+.service .experince .head {
+    color: rgba(68, 67, 69, 1);
+    width: fit-content;
+    position: relative;
+}
+
+.service .experince .head p {
+    z-index: 1;
+    position: relative;
+}
+
+.service .experince .head .img1 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    right: -39px;
+    top: -54px;
+}
+
+.service .experince .head .img2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    right: 0;
+    top: 0;
+}
+
+.service .content {
+    color: rgba(0, 0, 0, 1);
+}
+
+.service .experince .experinimg {
+    height: 350px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.service .serv_card .card_service_design .card_service {
+    border: 1px solid rgba(95, 63, 128, 0.33);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.serv_card .par {
+    position: relative;
+    width: auto;
+}
+
+.serv_card .par::after {
+    content: "";
+    background-image: url(/src/assets/images/home_16.webp);
+    width: 150px;
+    height: 87px;
+    position: absolute;
+    top: -45px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.service .card_img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* more_info */
+.more_info {
+    background-image: url('../../assets/images/home_11.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.more_info .head {
+    color: #fff;
+}
+.more_info .more_infoimg {
+    width: 100%;
+    height: 350px;
+    transform: scale(1.2) translate(0px, -29px);
+    object-fit: contain;
+
+}
+.more_info .button {
+    position: absolute;
+    bottom: 20%;
+    left: 0%;
+    width: fit-content;
+}
+.img_serv{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+

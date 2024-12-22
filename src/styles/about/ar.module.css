@@ -1,0 +1,182 @@
+/* landing  */
+.landing {
+    background-color: #fff;
+    color: #000;
+}
+
+.landing .landtext {
+    padding-right: 24px;
+    position: relative;
+}
+
+.landing .landtext::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.landing .aboutUs {
+    width: fit-content;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.landing .aboutUs::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #E4630D;
+}
+
+.landing .aboutUs::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: -22px;
+    width: 4px;
+    height: 30px;
+    background-color: #E4630D;
+    z-index: 12;
+}
+
+.landing .campTitle {
+    position: relative;
+    color: #E4630D;
+}
+
+.landImg {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    height: 400px;
+    margin-top: -70px;
+
+}
+
+.landing .campTitle::after {
+    position: absolute;
+    content: '';
+    bottom: 30px;
+    right: -22px;
+    width: 4px;
+    height: 30px;
+    background-color: #E4630D;
+    z-index: 12;
+}
+
+.landing .campTitle::before {
+    position: absolute;
+    content: '';
+    bottom: -30px;
+    right: -22px;
+    width: 4px;
+    height: 16px;
+    background-color: #E4630D;
+    z-index: 12;
+}
+
+.landing .campdis {
+    position: relative;
+    /* color: #E4630D; */
+    text-align: justify;
+}
+
+.landing .campdis::after {
+    position: absolute;
+    content: '';
+    bottom: 30px;
+    right: -22px;
+    width: 4px;
+    height: 30px;
+    background-color: #E4630D;
+    z-index: 12;
+}
+
+/* about  || Our mission */
+.ourMissionCards {
+    position: relative;
+}
+
+.ourMissionCards::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, rgba(255, 225, 217, 0.5), rgba(255, 225, 217, 0));
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.ourMissionCards .ourcard {
+    background-color: #D9D9D9;
+    /* opacity: .7; */
+    border-radius: 30px;
+}
+
+
+.ourMissionCards .ourcard .cardImg {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background-color: #5F3F80;
+    padding: 12px;
+    margin-bottom: 5px;
+}
+
+.imgAbout {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background-color: #E35200;
+    padding: 12px;
+    margin-bottom: 5px;
+    color: white;
+    opacity: 1;
+    border-radius: 10px;
+
+}
+
+.ourMissionCards .ourcard .titleStyle {
+    font-weight: bold;
+    color: #000;
+}
+
+.ourMissionCards .ourcard .cardDes {
+    color: #000;
+    text-align: justify;
+}
+
+/* services */
+.services {
+    position: relative;
+    width: 100%;
+    background-image: url('../../../src/assets/images/servbackground.webp');
+    background-size: cover;
+
+}
+
+.services .heeding {
+    color: #E4630D;
+}
+
+.services .servImg {
+    max-height: 350px;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width:567px) {
+    .services .servImg {
+        display: none;
+    }
+}

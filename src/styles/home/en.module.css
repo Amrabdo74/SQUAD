@@ -1,0 +1,264 @@
+.slider {
+    margin-top: 120px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #EAF2FF, #C8D9FF);
+    z-index: 2;
+
+}
+
+@media (max-width:992px) {
+    .slider {
+        margin-top: 60px !important;
+    }
+}
+
+.sliderImage {
+    width: 90%;
+    /* margin: auto; */
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+@media (min-width:992px) {
+    .slider::after {
+        position: absolute;
+        content: '';
+        width: 1000px;
+        height: 1000px;
+        background-color: var(--site-main-color);
+        right: -7%;
+        bottom: -76%;
+        z-index: -1;
+        border-radius: 50%;
+    }
+
+    .slider::before {
+        position: absolute;
+        content: '';
+        width: 1000px;
+        height: 1000px;
+        background-color: var(--site-main-color);
+        right: -7%;
+        top: -62%;
+        z-index: -1;
+        border-radius: 50%;
+
+    }
+}
+
+.slider .text {
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+}
+
+.slider .texthead {
+    color: rgba(68, 67, 69, 1);
+}
+
+.slider .icon {
+    color: var(--site-main-color);
+    transform: rotate(45deg) scale(-1);
+    font-size: 25px;
+}
+
+.slider .btn_more {
+    background-color: var(--site-main-color);
+    color: #fff;
+}
+
+.slider .btn_whats {
+    background-color: rgba(42, 178, 0, 1);
+    color: #fff;
+}
+
+
+
+/* cards */
+.home_card {
+
+    box-shadow: 30px 11px 41px -18px rgba(227, 82, 0, 0.25);
+    background-color: #fff;
+}
+
+.card_design_home .card_parent:nth-child(1) .home_card {
+    background-color: var(--site-main-color);
+    color: #fff;
+}
+
+
+.home_card .line {
+    width: 25%;
+    height: 2px;
+    background-color: black;
+}
+
+.home_card .shapeicon {
+
+    position: relative;
+}
+
+.home_card .shapeicon::after {
+    content: "";
+    background-image: url("../../assets/images/shape.webp") no-repeat contain;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card_design_home .card_parent:nth-child(1) .home_card .line {
+    background-color: rgb(255, 255, 255);
+
+}
+
+.card_design_home .card_parent:nth-child(1) .home_card .shapeicon {
+    color: black;
+
+}
+
+/* about_home */
+.about_home {
+    background-image: url("../../assets/images/bg.webp");
+    min-height: 450px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.about_home .img_about {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.about_home .line {
+    width: 25%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.about_home .content {
+    color: #fff;
+}
+
+/* service */
+.service {
+    background-image: url('../../assets/images/bg2_service.webp'), url('../../assets/images/bg1_service.webp');
+    /* Replace with your image URLs */
+    background-size: cover, cover;
+    /* Set the size for each image */
+    background-repeat: no-repeat, no-repeat;
+    /* Prevent the images from repeating */
+}
+
+@media (max-width:567px) {
+    .service {
+        background-size: auto;
+    }
+}
+
+.service .experince .head {
+    color: rgba(68, 67, 69, 1);
+    position: relative;
+}
+
+.service .content {
+    color: rgba(0, 0, 0, 1);
+}
+
+.service .experince .experinimg {
+    height: 350px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.service .serv_card .card_service_design .card_service {
+    border: 1px solid rgba(95, 63, 128, 0.33);
+    /* height: 500px; */
+    /* background-color: rgba(255, 255, 255, 0.7);  */
+}
+
+
+.service .card_img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.service .card_design {
+    /* background-image: url('../../assets/images/home_10.webp');
+    background-size: cover; 
+    background-repeat: no-repeat;*/
+    color: #fff;
+    position: relative;
+    min-height: 300px;
+    z-index: 2;
+
+}
+@keyframes animateBackground {
+    0% {
+        background-color: var(--site-main-color);
+        border-radius: 227px 83px 111px 66px;
+    }
+    50% {
+        /* background-color: lighten(var(--site-main-color), 20%); */
+        border-radius: 250px 100px 130px 50px;
+        transform: rotate(5deg);
+    }
+    100% {
+        background-color: var(--site-main-color);
+        border-radius: 227px 83px 111px 66px;
+    }
+}
+.service .card_design::after {
+    content: '';
+    background-color: var(--site-main-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 227px 83px 111px 66px;
+    animation: animateBackground 3s infinite ease-in-out;
+}
+
+
+.service .card_design .par {
+    width: 50%;
+    position: absolute;
+    left: 27%;
+}
+
+/* more_info */
+.more_info {
+    background-image: url('../../assets/images/home_11.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    direction: rtl;
+    /* height: 350px;
+    min-height: 350px; */
+
+}
+.more_info .head {
+    color: #fff;
+}
+
+.more_info .more_infoimg {
+    width: 100%;
+    height: 350px;
+    transform: scale(1.2) translate(0px, -29px);
+    object-fit: contain;
+
+}
+
+.more_info .button {
+    position: absolute;
+    bottom: 20%;
+    left: 1%;
+    width: fit-content;
+}
