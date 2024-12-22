@@ -54,18 +54,14 @@ const Navbar = () => {
   return (
     <>
       <header className={`${styles.header} ${isSticky ? styles.sticky : ""}`}>
-        <div className="d-flex container justify-content-between align-items-center d-none d-md-none d-lg-flex ">
-          <Link to="/" aria-label="logo">
-            {" "}
-            <img src={logo} className={styles.logo} alt="" />
-          </Link>
+        {/* <div className="d-flex container justify-content-between align-items-center d-none d-md-none d-lg-flex ">
+          
           <div
             className={`d-flex flex-column justify-content-start ${styles.nav_contact}`}
           >
             <div className="d-flex gap-2 align-items-center ">
               <span>
                 <FaWhatsapp className="fs-4" />
-                {/* {t("call us now")} :  */}
               </span>
               <Link to="https://wa.me/+201155272634" className={styles.phone}>
                 01155272634
@@ -73,14 +69,13 @@ const Navbar = () => {
             </div>
             <div className="d-flex gap-2 align-items-center ">
               <span>
-                {/* {t("Email")} : */}
                 <MdEmail className="fs-4" />
               </span>
               <Link to="mailto:info@najezsoft.com" className={styles.mailto}>
                 info@najezsoft.com              </Link>
             </div>
           </div>
-        </div>
+        </div> */}
         <nav className="navbar navbar-expand-lg py-0">
           <div className="container">
             <button
@@ -94,15 +89,20 @@ const Navbar = () => {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <Link className="d-block d-md-block d-lg-none" to="/">
+            {/* <Link className="d-block d-md-block d-lg-none" to="/">
               {" "}
               <img src={logo} className={styles.logo} alt="" />
-            </Link>
+            </Link> */}
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className={`navbar-nav m-auto mb-2 mb-lg-0  p-0 ${styles.ulBg}`}>
+              <ul className={`navbar-nav m-auto mb-2 mb-lg-0  p-0 py-1 ${styles.ulBg}`}>
+                {/* <li className="nav-item"> */}
+                {/* <Link to="/" aria-label="logo"> */}
+            <img src={logo} width={"90px"} alt="" />
+          {/* </Link> */}
+                {/* </li> */}
                 <li className="nav-item">
                   <NavLink className="nav-link " aria-current="page" to="/">
                     {t("home")}
