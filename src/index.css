@@ -1,5 +1,5 @@
 :root {
-    --site-main-color: #E35200;
+    --site-main-color: #eb3f36;
     --site-second-color: #5F3F80,
 }
 
@@ -57,7 +57,7 @@ body:lang(ar) .wave-svg {
     z-index: 100;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: #E35200;
+    background-color: #eb3f36;
 }
 
 /* body:lang(ar) .nav__menu {
@@ -329,7 +329,7 @@ body:lang(en) .dropdown-menu {
 
 /*start  slider css */
 .Honecard .card {
-    box-shadow: 30px 11px 41px -18px #E3520040;
+    box-shadow: 30px 11px 41px -18px #eb3f3640;
     border-radius: 30px;
 }
 
@@ -379,7 +379,7 @@ body:lang(en) .dropdown-menu {
 }
 
 .Honecard .four-dev .home-icon::after {
-    background-color: #E35200;
+    background-color: #eb3f36;
 }
 
 .fisrt-home-service-div {
@@ -398,15 +398,13 @@ body:lang(en) .dropdown-menu {
 
 /*end  slider css */
 /* start footer css*/
-footer {
-    background: url("./assets/images/footer-bg.webp") center center no-repeat;
+.bg-network ,footer {
+    background: url("./assets/images/nav.jpg") center center no-repeat;
     background-size: 100% 100%;
-    padding-top: 250px;
-    padding-bottom: 80px;
-    position: relative;
+  
 }
 
-@media (max-width:992px) {
+/* @media (max-width:992px) {
     footer {
         background: url("./assets/images/footer-phone.webp") center center no-repeat;
         background-size: 100% 100%;
@@ -424,7 +422,7 @@ footer {
         padding-bottom: 65px !important;
     }
 
-}
+} */
 
 /* footer a,
 footer p {
@@ -580,7 +578,7 @@ footer .contact_icon {
 }
 
 .footer-bottom {
-    background: #E35200;
+    background: #eb3f36;
     height: 50px;
     width: 100%;
     position: absolute;
@@ -932,17 +930,17 @@ li::marker {
     z-index: 2;
     border-style: solid;
     border-width: 130px;
-    border-color: transparent #E35200 #E35200 transparent;
+    border-color: transparent #eb3f36 #eb3f36 transparent;
 }
 
 body:lang(en) .landing-blog::after {
     left: 0px;
-    border-color: transparent transparent #E35200 #E35200;
+    border-color: transparent transparent #eb3f36 #eb3f36;
 }
 
 
 .landing-blog .blog-heed {
-    color: #E35200;
+    color: #eb3f36;
     font-weight: bold;
 }
 
@@ -1221,7 +1219,7 @@ body:lang(en) .right-side {
     border-radius: 3px;
     text-decoration: none;
     padding: 6px 12px;
-    background-color: #e35200;
+    background-color: #eb3f36;
     margin-right: 5px;
     margin-bottom: 5px;
     display: inline-block;

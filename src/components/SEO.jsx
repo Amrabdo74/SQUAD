@@ -39,7 +39,7 @@ export default function SEO({ title, description, ogImage, keywords }) {
       <meta property="og:image:width" content="300" />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:site" content="https://x.com/wanfis18" />
-      <meta name="theme-color" content="#E35200" />
+      <meta name="theme-color" content="#eb3f36" />
       <link rel="canonical" href={ogImage}></link>
     </Helmet>
   );

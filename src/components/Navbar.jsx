@@ -97,11 +97,13 @@ const Navbar = () => {
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className={`navbar-nav m-auto mb-2 mb-lg-0  p-0 py-1 ${styles.ulBg}`}>
+              <ul
+                className={`navbar-nav m-auto mb-2 mb-lg-0  p-0 py-1 ${styles.ulBg}`}
+              >
                 {/* <li className="nav-item"> */}
-                {/* <Link to="/" aria-label="logo"> */}
-            <img src={logo} width={"90px"} alt="" />
-          {/* </Link> */}
+                <Link to="/" aria-label="logo">
+                  <img src={logo} width={"90px"} alt="" />
+                </Link>
                 {/* </li> */}
                 <li className="nav-item">
                   <NavLink className="nav-link " aria-current="page" to="/">
@@ -112,7 +114,8 @@ const Navbar = () => {
                   <NavLink
                     className="nav-link "
                     aria-current="page"
-                    to="/about"
+                    to='/a'
+                    // to="/about"
                   >
                     {t("about us")}
                   </NavLink>
@@ -126,7 +129,7 @@ const Navbar = () => {
                     {t("secvice")}
                   </NavLink>
                 </li> */}
-                <li className="dropdown">
+                {/* <li className="dropdown">
                   <NavLink to="/service" className="nav-item text-decoration-none p-2 p-0">
                     {t("secvice")}
                   </NavLink>
@@ -165,14 +168,20 @@ const Navbar = () => {
                       </NavLink>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li className="nav-item">
-                  <NavLink className="nav-link " aria-current="page" to="/work">
+                  <NavLink className="nav-link " aria-current="page" 
+                  to='/a'
+                  // to="/work"
+                  >
                     {t("our work")}
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link " aria-current="page" to="/blog">
+                  <NavLink className="nav-link " aria-current="page"
+                  //  to="/blog"
+to='/a'
+                   >
                     {t("blog")}
                   </NavLink>
                 </li>
@@ -180,7 +189,8 @@ const Navbar = () => {
                   <NavLink
                     className="nav-link "
                     aria-current="page"
-                    to="/contact"
+                    to='/a'
+                    // to="/contact"
                   >
                     {t("contact us")}
                   </NavLink>

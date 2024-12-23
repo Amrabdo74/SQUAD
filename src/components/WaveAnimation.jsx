@@ -20,8 +20,8 @@ const WaveAnimation = ({ pageTitle, waveHeader, paragraph }) => (
             y1="0"
             y2="0"
           >
-            <stop stopColor="#E35200" offset="0" />
-            <stop stopColor="#E35200" offset="1" />
+            <stop stopColor="#eb3f36" offset="0" />
+            <stop stopColor="#eb3f36" offset="1" />
           </linearGradient>
           <path
             d="M 0 0 L 0 628.317 Q 131.9 546.55 263.8 528.806 T 527.6 484.548 T 791.4 423.501 T 1055.2 360.947 T 1319 318.147 L 1319 0 Z"

@@ -14,28 +14,29 @@ import Portfolio from "../components/Portfolio";
 import SEO from "../components/SEO";
 import Servicecard from "../components/Servicecard";
 import { Link } from "react-router-dom";
-import Customers from "../components/Customers";
+// import Customers from "../components/Customers";
+import Carousel from "../components/Slider";
+import ProductsAndServices from "../components/Info";
+import FactSheet from "../components/FactSheet";
+import FeaturedClients from "../components/Customers";
 const HomePage = () => {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
   const [langClass, setLangClass] = useState("en");
   useEffect(() => {
     setLangClass(currentLanguage);
-
-
   }, []);
   const styles = currentLanguage === "ar" ? arStyles : enStyles;
   return (
     <>
-      <SEO
-        title="Home - NajezSoft Web Solutions"
-        description="NajezSoft offers comprehensive web solutions including web design, development, hosting, SEO, and online marketing. Established in 2010, serving numerous clients and institutions."
-        name="NajezSoft"
-        keywords="web design, web development, SEO, online marketing, e-commerce, web hosting, NajezSoft"
-        ogImage={"https://am.najezsoft.com/" + "src/assets/images/najez_logo.webp"}
+      <SEO title="Home - SQUAD" description="" name="SQUAD" keywords="SQUAD" />
+      <Carousel />
+      <div className="bg-network">
+        <ProductsAndServices />
+      </div>
+      <FactSheet />
 
-      />
-      <section className={styles.slider}>
+      {/* <section className={styles.slider}>
         <div className="container h-100 ">
           <div className="row  h-100 ">
             <div className="col-12  col-md-6 align-self-center ">
@@ -122,9 +123,9 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className={`${styles.service} mt-5 px-3 `}>
+      {/* <section className={`${styles.service} mt-5 px-3 `}>
         <div className="container">
           <div
             className={`${styles.experince}  row justify-content-between align-items-center`}
@@ -135,12 +136,6 @@ const HomePage = () => {
                   <p className="fs-1 fw-bold mx-2" data-aos="fade-up">10</p>
                   <p data-aos="fade-up">{t("years of experience")}</p>
                 </div>
-                {/* <img
-                  src={service2img}
-                  alt=""
-                  title=""
-                  className={`${styles.img2}`}
-                /> */}
               </div>
 
               <p className={`${styles.content}`} data-aos="fade-up">
@@ -180,9 +175,9 @@ const HomePage = () => {
             />
           </div>
         </div>
-      </section>
-      <Portfolio />
-      <section className={`${styles.more_info} `}>
+      </section> */}
+      {/* <Portfolio /> */}
+      {/* <section className={`${styles.more_info} `}>
         <div className="container position-relative mt-5">
           <div className="row justify-content-between h-100">
             <div className="col-sm-12 col-md-4 algin-self-center " >
@@ -207,9 +202,14 @@ const HomePage = () => {
 
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <Team /> */}
-      <Customers />
+      <FeaturedClients />
+      <div className="text-center py-3">
+        <button className="main-btn mt-2">
+          <span className="mx-2">مشاهدة المزيد</span>
+        </button>
+      </div>
     </>
   );
 };

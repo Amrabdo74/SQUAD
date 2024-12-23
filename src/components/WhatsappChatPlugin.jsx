@@ -1,6 +1,6 @@
 import React from 'react';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
-import avatar from '../assets/images/najez_logo.webp';
+import avatar from '../assets/images/logo png.png';
 
 function WhatsappChatPlugin() {
   const buttonStyle = {
@@ -15,9 +15,9 @@ function WhatsappChatPlugin() {
 
   return (
     <FloatingWhatsApp
-      phoneNumber={'+201155272634'}
+      // phoneNumber={'+201155272634'}
       // phoneNumber={settiengs.tel1 && '+2' + settiengs.tel1}
-      accountName={`Najez Soft`} //
+      accountName={`SQUAD`} //
       message="مرحبا، كيف أستطيع مساعدتك؟"
       dataTip="يتم الرد عادةً خلال ساعة واحدة"
       buttonStyle={buttonStyle}
