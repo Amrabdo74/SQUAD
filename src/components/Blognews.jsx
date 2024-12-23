@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { FaShareAlt, FaWhatsapp } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 const cards = [

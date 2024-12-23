@@ -3,6 +3,8 @@ import Team from "../components/Team";
 import WaveAnimation from "../components/WaveAnimation";
 import Blognews from "../components/Blognews";
 import SEO from "../components/SEO";
+import React from 'react';
+
 import langImg2 from "../assets/images/blog-img-land-2.webp"
 const BlogPage = () => {
   const { t, i18n } = useTranslation();

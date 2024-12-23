@@ -19,6 +19,8 @@ import Carousel from "../components/Slider";
 import ProductsAndServices from "../components/Info";
 import FactSheet from "../components/FactSheet";
 import FeaturedClients from "../components/Customers";
+import React from 'react';
+
 const HomePage = () => {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;

@@ -7,6 +7,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import React from 'react';
 
 const SocialIcons = () => (
   <div className="d-flex gap-2 social_icon justify-content-center">

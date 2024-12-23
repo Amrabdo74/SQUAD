@@ -3,6 +3,7 @@ import ContactForm from "../components/ContactForm";
 import WaveAnimation from "../components/WaveAnimation";
 import SEO from "../components/SEO";
 import Map from "../components/Map";
+import React from 'react';
 
 const ContactPage = () => {
   const { t, i18n } = useTranslation();

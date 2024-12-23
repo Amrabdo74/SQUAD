@@ -12,6 +12,8 @@ import { IoMdChatboxes } from "react-icons/io";
 import { GoGoal } from "react-icons/go";
 import { CiFlag1 } from "react-icons/ci";
 import Team from "../components/Team";
+import React from 'react';
+
 const AboutPage = () => {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;

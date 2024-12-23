@@ -1,4 +1,6 @@
 // src/Honecard.js
+
+import React from 'react';
 import { FaRegLightbulb, FaTools, FaChartLine, FaRocket } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";

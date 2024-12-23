@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import $404 from '../assets/images/404.webp'
+import React from 'react';
+
 const PageNotFound = () => {
   return (
     <div className=" image-404 d-flex justify-content-center align-items-center flex-column" style={{height:"100vh"}}>

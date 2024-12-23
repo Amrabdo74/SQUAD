@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Map = () => {
   // Coordinates for the location (e.g., Egypt)
 

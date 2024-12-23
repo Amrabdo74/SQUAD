@@ -1,7 +1,7 @@
 // src/components/BackToTopButton.js
+import React from 'react';
 import  { useState, useEffect } from 'react';
 import { MdOutlineVerticalAlignTop } from 'react-icons/md';
-
 const BackToTopButton = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
 

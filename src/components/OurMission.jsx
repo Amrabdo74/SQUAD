@@ -1,3 +1,5 @@
+import React from 'react';
+
 const OurMission = ({ icon, title, desc, ourcard, titleStyle, cardDes, feed }) => {
   return (
     <div className="col-sm-12 col-md-4 col-lg-3 mb-3">

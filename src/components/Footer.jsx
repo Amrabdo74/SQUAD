@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/logo png.png";
 import { FaAngleRight, FaEnvelope, FaPhoneSquareAlt } from "react-icons/fa";
@@ -5,6 +6,7 @@ import { ImLocation } from "react-icons/im";
 import { useTranslation } from "react-i18next";
 import BackToTopButton from "./BackToTopButton";
 import SocialIcons from "./SocialIcons";
+
 const Footer = () => {
   const { t } = useTranslation();
   return (

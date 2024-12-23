@@ -1,5 +1,7 @@
 import { FaHome } from "react-icons/fa";
 import SocialIcons from "./SocialIcons";
+import React from 'react';
+
 import NavPage from "./NavPage";
 const WaveAnimation = ({ pageTitle, waveHeader, paragraph }) => (
   <div className="wave-section position-relative top-0">
