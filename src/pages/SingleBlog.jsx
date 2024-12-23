@@ -7,6 +7,8 @@ import home3 from "../assets/images/home_3.webp";
 import { CiClock2 } from "react-icons/ci";
 import { useEffect } from "react";
 import SEO from "../components/SEO";
+import React from 'react';
+
 const SingleBlog = () => {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;

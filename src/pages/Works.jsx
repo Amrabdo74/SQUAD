@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import Portfolio from "../components/Portfolio";
 import WaveAnimation from "../components/WaveAnimation";
 import SEO from "../components/SEO";
+import React from 'react';
 
 const WorksPage = () => {
   const { t } = useTranslation();

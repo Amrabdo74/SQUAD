@@ -3,6 +3,8 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
+import React from 'react';
+
 import ErrorHandler from "../components/error/ErrorHandler";
 import Layout from "../pages/Layout";
 import HomePage from "../pages";

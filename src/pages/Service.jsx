@@ -10,6 +10,8 @@ import topImage from "../assets/images/contact-bg.webp";
 import bottonImage from "../assets/images/contant-bot-bg.webp";
 import SEO from "../components/SEO";
 import Servicecard from "../components/Servicecard";
+import React from 'react';
+
 const ServicePage = () => {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;

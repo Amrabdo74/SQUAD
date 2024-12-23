@@ -11,6 +11,8 @@ import phone2 from "../assets/images/phones2.webp";
 import serv from "../assets/images/web development.jpg";
 import NavPage from "../components/NavPage";
 import SEO from "../components/SEO";
+import React from 'react';
+
 const SingleService = () => {
     const { t, i18n } = useTranslation();
     const currentLanguage = i18n.language;
